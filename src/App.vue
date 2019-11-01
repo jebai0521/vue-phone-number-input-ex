@@ -51,7 +51,7 @@
       </button>
       <div class="component-container">
         <div class="component">
-          <VuePhoneNumberInput
+          <vue-phone-number-input
             v-if="!screenshotMode"
             id="phoneNumber1"
             v-model="phoneNumber"
@@ -63,10 +63,11 @@
             :loader="hasLoaderActive"
             :default-country-code="defaultCountry"
             :error="hasErrorActive"
+            :keep-preferred-or-only-country-sort="true"
             clearable
             @update="onUpdate"
           />
-          <VuePhoneNumberInput
+          <vue-phone-number-input
             v-else
             id="phoneNumber1"
             v-model="phoneNumber2"
@@ -116,7 +117,7 @@
           <b>With translations (FR) - No flags - Dark - No Use Browser Locale</b>
           <br>
           <br>
-          <VuePhoneNumberInput
+          <vue-phone-number-input
             id="phoneNumber2"
             v-model="phoneNumber2"
             :translations="translations"
@@ -164,12 +165,13 @@
 </template>
 
 <script>
+  import Vue from 'vue'
   import VuePhoneNumberInput from './VuePhoneNumberInput'
+  Vue.use(VuePhoneNumberInput)
 
   export default {
     name: 'App',
     components: {
-      VuePhoneNumberInput
     },
     data() {
       return {
@@ -177,7 +179,7 @@
         phoneNumber: '0665656565',
         phoneNumber2: null,
         defaultCountry: 'FR',
-        countriesList: ['FR', 'BE', 'DE'],
+        countriesList: ['SG', 'TW', 'CN', 'HK'],
         countriesIgnored: ['AF', 'AD', 'AL'],
         translations: {
           countrySelectorLabel: 'Code pays',
