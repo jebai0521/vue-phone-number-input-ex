@@ -5,6 +5,7 @@
   "author": "Louis Mazel <mazuel.loic@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve --mode development --open",
+    "build": "npm run build:lib && npm run build:docs",
     "test": "vue-cli-service test:unit /test/specs",
     "lint": "vue-cli-service lint",
     "before-publish": "npm audit && npm i && npm run lint && npm run build",
@@ -14,11 +15,7 @@
     "serve:build": "vue-cli-service serve --mode production",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:watch": "vue-cli-service test:unit --watch",
-    "ui": "vue ui",
-    "build": "set NODE_ENV=production && npm run build:browser && npm run build:es && npm run build:umd",
-    "build:browser": "rollup --config build/rollup.config.browser.js",
-    "build:es": "rollup --config build/rollup.config.es.js",
-    "build:umd": "rollup --config build/rollup.config.umd.js"
+    "ui": "vue ui"
   },
   "files": [
     "dist/"
@@ -37,6 +34,8 @@
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21",
     "rollup": "^1.10.0",
     "rollup-plugin-analyzer": "^3.0.0",
     "rollup-plugin-babel": "^4.3.2",
@@ -46,10 +45,7 @@
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-terser": "^4.0.4",
-    "rollup-plugin-vue": "^5.0.0",
-    "rollup-plugin-json": "^4.0.0",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.5.21"
+    "rollup-plugin-vue": "^5.0.0"
   },
   "postcss": {
     "plugins": {
@@ -73,9 +69,7 @@
     "not ie <= 8"
   ],
   "license": "MIT",
-  "main": "dist/vue-phone-number-input.umd.js",
-  "module": "dist/vue-phone-number-input.esm.js",
-  "unpkg": "dist/vue-phone-number-input.min.js",
+  "main": "dist/vue-phone-number-input.common.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LouisMazel/vue-phone-number-input.git"

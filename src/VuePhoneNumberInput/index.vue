@@ -63,8 +63,8 @@
   import { parsePhoneNumberFromString, AsYouType, getExampleNumber } from 'libphonenumber-js'
   import VueInputUI from 'vue-input-ui'
   import 'vue-input-ui/dist/vue-input-ui.css'
-  import CountrySelector from './_subs/CountrySelector'
-  import locales from './assets/locales'
+  import CountrySelector from 'VuePhoneNumberInput/_subs/CountrySelector'
+  import locales from 'VuePhoneNumberInput/assets/locales'
 
   const browserLocale = () => {
     if (!window) return null
