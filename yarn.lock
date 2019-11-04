@@ -669,6 +669,13 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@emanon_/vue-input-ui@^0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@emanon_/vue-input-ui/-/vue-input-ui-0.2.9.tgz#1e1a0fd0cf7e00c7650fce2ab4fb4f9571eec443"
+  integrity sha512-47fO/x8iRVYOTnFy3UJ1p3HhJd1jgqNIVAAXyeyVXnixPob4jG6c5Q0WWvuTl1uFJb5DjxlKfVfhJS7n3GIvVQ==
+  dependencies:
+    vue "^2.5.21"
+
 "@hapi/address@2.x.x":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.2.tgz#1c794cd6dbf2354d1eb1ef10e0303f573e1c7222"
@@ -8337,13 +8344,6 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
-
-vue-input-ui@^0.2.9:
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/vue-input-ui/-/vue-input-ui-0.2.9.tgz#dd98d98a126425dc56d4ee61d8d2bddea7fb2145"
-  integrity sha512-wgtehXTfXFgy/nt0DnWT5qFXrk7zIEjW9dAfpCcKrBletjPmtGWiRmDGEqtwtW4Sd4aH+DTLDodg19J3Qca57Q==
-  dependencies:
-    vue "^2.5.21"
 
 vue-loader@^15.7.0:
   version "15.7.1"
