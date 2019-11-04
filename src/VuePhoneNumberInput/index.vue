@@ -62,8 +62,8 @@
   import { countries, countriesIso } from './assets/js/phoneCodeCountries.js'
   import examples from 'libphonenumber-js/examples.mobile.json'
   import { parsePhoneNumberFromString, AsYouType, getExampleNumber } from 'libphonenumber-js'
-  import VueInputUI from 'vue-input-ui'
-  import 'vue-input-ui/dist/vue-input-ui.css'
+  import VueInputUI from '@emanon_/vue-input-ui'
+  import '@emanon_/vue-input-ui/dist/vue-input-ui.css'
   import CountrySelector from './_subs/CountrySelector'
   import locales from './assets/locales'
 
