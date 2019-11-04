@@ -291,13 +291,13 @@
     }
     &.has-value {
       .field-input {
-        padding-top: 14px;
+        // padding-top: 14px;
         padding-left: 40px;
       }
     }
     &.has-hint {
       .field-input {
-        padding-top: 14px;
+        // padding-top: 14px;
       }
     }
     &.is-focused {
@@ -457,7 +457,7 @@
       }
       &.has-value {
         .field-input {
-          padding-top: 12px;
+          // padding-top: 12px;
         }
       }
     }
@@ -477,7 +477,7 @@
       }
       &.has-value {
         .field-input {
-          padding-top: 18px;
+          // padding-top: 18px;
         }
       }
     }
