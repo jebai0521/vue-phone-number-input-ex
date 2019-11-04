@@ -66,6 +66,7 @@
             :keep-preferred-or-only-country-sort="true"
             clearable
             :no-flags="noFlags"
+            :size="size"
           />
           <vue-phone-number-input
             v-else
@@ -193,7 +194,8 @@
         disabled: false,
         hasLoaderActive: false,
         hasErrorActive: false,
-        noFlags: true
+        noFlags: true,
+        size: 'lg'
       }
     },
     computed: {
