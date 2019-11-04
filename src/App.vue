@@ -65,7 +65,7 @@
             :error="hasErrorActive"
             :keep-preferred-or-only-country-sort="true"
             clearable
-            @update="onUpdate"
+            :no-flags="noFlags"
           />
           <vue-phone-number-input
             v-else
@@ -178,9 +178,9 @@
         screenshotMode: false,
         phoneNumber: '0665656565',
         phoneNumber2: null,
-        defaultCountry: 'FR',
+        defaultCountry: 'SG',
         countriesList: ['SG', 'TW', 'CN', 'HK'],
-        countriesIgnored: ['AF', 'AD', 'AL'],
+        countriesIgnored: [],
         translations: {
           countrySelectorLabel: 'Code pays',
           countrySelectorError: 'Choisir un pays',
@@ -192,7 +192,8 @@
         dark: false,
         disabled: false,
         hasLoaderActive: false,
-        hasErrorActive: false
+        hasErrorActive: false,
+        noFlags: true
       }
     },
     computed: {

@@ -42,16 +42,6 @@
         </div>
       </slot>
     </div>
-    <label
-      ref="label"
-      :for="id"
-      :class="error ? 'text-danger' : null"
-      :style="[colorStyle]"
-      class="field-label"
-      @click="onFocus"
-    >
-      {{ hint || label }}
-    </label>
     <Transition name="slide">
       <div
         v-show="isFocus"
@@ -262,18 +252,6 @@
         position: absolute;
       }
     }
-    .field-label {
-      position: absolute;
-      top: 3px;
-      cursor: pointer;
-      left: 13px;
-      -webkit-transform: translateY(25%);
-      transform: translateY(25%);
-      opacity: 0;
-      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-      font-size: 11px;
-      color: rgba(0, 0, 0, 0.54);
-    }
     .field-input {
       cursor: pointer;
       background-color: transparent;
@@ -312,24 +290,12 @@
       }
     }
     &.has-value {
-      .field-label {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        font-size: 11px;
-      }
       .field-input {
         padding-top: 14px;
         padding-left: 40px;
       }
     }
     &.has-hint {
-      .field-label {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        font-size: 11px;
-      }
       .field-input {
         padding-top: 14px;
       }
@@ -344,7 +310,6 @@
         border-color: #ccc;
         background-color: #f2f2f2;
       }
-      .field-label,
       .field-input {
         cursor: default;
       }
@@ -394,9 +359,6 @@
       }
     }
     &.is-dark {
-      .field-label {
-        color: rgba(255, 255, 255, 0.7);
-      }
       .field-input {
         background-color: #424242;
         border-color: rgba(255, 255, 255, 0.7);
@@ -413,7 +375,6 @@
         color: rgba(255, 255, 255, 0.7);
       }
       &.is-disabled {
-        .field-label,
         .field-input {
           color: #000;
         }
@@ -486,9 +447,6 @@
         min-height: 36px;
         font-size: 12px;
       }
-      .field-label {
-        font-size: 10px;
-      }
       .field-country-flag {
         top: 16px;
         img {
@@ -508,9 +466,6 @@
         height: 48px;
         min-height: 48px;
         font-size: 16px;
-      }
-      .field-label {
-        font-size: 14px;
       }
       .field-country-flag {
         top: 25px;
