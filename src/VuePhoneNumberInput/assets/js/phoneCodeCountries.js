@@ -1257,7 +1257,7 @@ export const countriesIso = allCountries.map(country => country[1].toUpperCase()
 function oscar (country) {
   const countryName = country[0]
   const countryCode = country[2]
-  return '+' + countryCode + ' (' + countryName + ')'
+  return '+' + countryCode + ' ' + countryName + ''
 }
 
 export const countries = allCountries.map(country => ({
