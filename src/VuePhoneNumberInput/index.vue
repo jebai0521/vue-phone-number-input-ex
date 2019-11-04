@@ -303,7 +303,7 @@
     }
     .input-phone-number:not(.is-dark):not(.is-disabled) {
       input {
-        background-color: transparent !important;
+        background-color: '#FFF' !important;
       }
     }
   }
