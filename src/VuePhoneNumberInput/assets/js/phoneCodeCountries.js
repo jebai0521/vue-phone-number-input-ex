@@ -219,7 +219,8 @@ const allCountries = [
     '56'
   ],
   [
-    'China (中国)',
+    // 'China (中国)',
+    '中国',
     'cn',
     '86'
   ],
@@ -482,7 +483,8 @@ const allCountries = [
     '504'
   ],
   [
-    'Hong Kong (香港)',
+    // 'Hong Kong (香港)',
+    '香港',
     'hk',
     '852'
   ],
@@ -544,7 +546,8 @@ const allCountries = [
     '1876'
   ],
   [
-    'Japan (日本)',
+    // 'Japan (日本)',
+    'Japan',
     'jp',
     '81'
   ],
@@ -637,6 +640,7 @@ const allCountries = [
   ],
   [
     'Macau (澳門)',
+    '澳門',
     'mo',
     '853'
   ],
@@ -1081,7 +1085,8 @@ const allCountries = [
     '963'
   ],
   [
-    'Taiwan (台灣)',
+    // 'Taiwan (台灣)',
+    '台灣',
     'tw',
     '886'
   ],
@@ -1249,8 +1254,15 @@ const allCountries = [
 
 export const countriesIso = allCountries.map(country => country[1].toUpperCase())
 
+function oscar (country) {
+  const countryName = country[0]
+  const countryCode = country[2]
+  return '+' + countryCode + ' (' + countryName + ')'
+}
+
 export const countries = allCountries.map(country => ({
-  name: country[0],
+  // name: country[0],
+  name: oscar(country),
   iso2: country[1].toUpperCase(),
   dialCode: country[2],
   priority: country[3] || 0,
