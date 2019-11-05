@@ -270,22 +270,22 @@
     font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     .select-country-container {
-      flex: 0 0 120px;
-      width: 120px;
-      min-width: 120px;
-      max-width: 120px;
+      flex: 0 0 100px;
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
     }
     &.sm .select-country-container {
-      flex: 0 0 110px;
-      width: 110px;
-      min-width: 110px;
-      max-width: 110px;
+      flex: 0 0 100px;
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
     }
     &.lg .select-country-container {
-      flex: 0 0 130px;
-      width: 130px;
-      min-width: 130px;
-      max-width: 130px;
+      flex: 0 0 100px;
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
     }
     .country-selector {
       cursor: pointer;
@@ -300,6 +300,11 @@
       margin-left: -3px !important;
       border-top-left-radius: 0 !important;
       border-bottom-left-radius: 0 !important;
+    }
+    .input-phone-number:not(.is-dark):not(.is-disabled) {
+      input {
+        background-color: '#FFF' !important;
+      }
     }
     .input-phone-number:not(.is-dark):not(.is-disabled) {
       input {

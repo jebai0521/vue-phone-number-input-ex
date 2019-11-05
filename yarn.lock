@@ -669,10 +669,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@emanon_/vue-input-ui@^0.2.9":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@emanon_/vue-input-ui/-/vue-input-ui-0.2.9.tgz#1e1a0fd0cf7e00c7650fce2ab4fb4f9571eec443"
-  integrity sha512-47fO/x8iRVYOTnFy3UJ1p3HhJd1jgqNIVAAXyeyVXnixPob4jG6c5Q0WWvuTl1uFJb5DjxlKfVfhJS7n3GIvVQ==
+"@emanon_/vue-input-ui@^0.2.10":
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/@emanon_/vue-input-ui/-/vue-input-ui-0.2.10.tgz#97534c0d3b7a67c27492136ccce4e9fb1e6b1265"
+  integrity sha512-4Fd666t/Tf1ip4ep/uT3qqXNO9K6PzTW9YHcD23UbN21PpLSBTf1GG+EfZj6GE/fuLdsZGR+zEegKSmFYde3nQ==
   dependencies:
     vue "^2.5.21"
 

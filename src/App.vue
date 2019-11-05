@@ -241,7 +241,7 @@ hr {
   border-top: 1px solid #ebebeb;
 }
 .container {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   font-family: "Avenir", Helvetica, Arial, sans-serif;

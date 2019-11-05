@@ -267,7 +267,7 @@
       outline: none;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 4px;
-      font-size: 13px;
+      font-size: 18px;
       z-index: 0;
     }
     &-toggle {
@@ -465,7 +465,7 @@
       .field-input {
         height: 48px;
         min-height: 48px;
-        font-size: 16px;
+        font-size: 18px;
       }
       .field-country-flag {
         top: 25px;
