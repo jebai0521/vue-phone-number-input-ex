@@ -337,7 +337,7 @@
       top: 100%;
       border-radius: 4px;
       width: 100%;
-      min-width: 230px;
+      min-width: 270px;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
       &-item {
         padding: 0 10px;
