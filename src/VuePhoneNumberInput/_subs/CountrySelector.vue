@@ -344,7 +344,8 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        font-size: 12px;
+        font-size: 18px;
+        color:black;
         cursor: pointer;
         &:hover, &.keyboard-selected {
           background-color: #f2f2f2;
