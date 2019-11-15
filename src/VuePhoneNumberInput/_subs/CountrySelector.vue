@@ -258,16 +258,20 @@
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
       position: relative;
       width: 100%;
-      height: 42px;
-      min-height: 42px;
+      // height: 42px;
+      // min-height: 42px;
       padding-right: 18px;
       padding-left: 10px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
       font-weight: 400;
       -webkit-appearance: none;
       outline: none;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 4px;
       font-size: 2.4rem;
+      box-sizing: border-box;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
       z-index: 0;
     }
     &-toggle {
@@ -337,7 +341,7 @@
       top: 100%;
       border-radius: 4px;
       width: 100%;
-      min-width: 420px;
+      min-width: 300px;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
       &-item {
         padding: 0 10px;
@@ -444,9 +448,9 @@
     }
     &.sm {
       .field-input {
-        height: 36px;
-        min-height: 36px;
-        font-size: 2.1rem;
+        // height: 36px;
+        // min-height: 36px;
+        // font-size: 2.1rem;
       }
       .field-country-flag {
         top: 16px;
@@ -464,9 +468,9 @@
     }
     &.lg {
       .field-input {
-        height: 48px;
-        min-height: 48px;
-        font-size: 2.4rem;
+        // height: 60px;
+        // min-height: 48px;
+        // font-size: 2.4rem;
       }
       .field-country-flag {
         top: 25px;

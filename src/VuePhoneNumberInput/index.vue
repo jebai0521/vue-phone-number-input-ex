@@ -62,9 +62,10 @@
   import { countries, countriesIso } from './assets/js/phoneCodeCountries.js'
   import examples from 'libphonenumber-js/examples.mobile.json'
   import { parsePhoneNumberFromString, AsYouType, getExampleNumber } from 'libphonenumber-js'
-  import VueInputUI from '../VueInputUi/index'
-  import '@emanon_/vue-input-ui/dist/vue-input-ui.css'
+  // import VueInputUI from '@emanon_/vue-input-ui'
+  // import '@emanon_/vue-input-ui/dist/vue-input-ui.css'
   import CountrySelector from './_subs/CountrySelector'
+  import VueInputUI from '../VueInputUi/index'
   import locales from './assets/locales'
 
   const browserLocale = () => {
@@ -264,6 +265,7 @@
   @import "./assets/scss/flexbox-helper.scss";
   @import "./assets/iti-flags/flags.css";
   .vue-phone-number-input {
+
     *, *::before, *::after {
       box-sizing: border-box;
     }
@@ -272,20 +274,20 @@
     .select-country-container {
       flex: 0 0 30%;
       width: 30%;
-      min-width: 100px;
-      max-width: 130px;
+      min-width: 90px;
+      max-width: 140px;
     }
     &.sm .select-country-container {
       flex: 0 0 30%;
       width: 30%;
-      min-width: 100px;
-      max-width: 130px;
+      min-width: 90px;
+      max-width: 140px;
     }
     &.lg .select-country-container {
       flex: 0 0 30%;
       width: 30%;
-      min-width: 100px;
-      max-width: 130px;
+      min-width: 90px;
+      max-width: 140px;
     }
     .country-selector {
       cursor: pointer;

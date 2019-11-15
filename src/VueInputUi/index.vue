@@ -197,18 +197,20 @@
       transition-duration: 0.3s;
       position: relative;
       width: 100%;
-      padding: 0 12px;
+      padding: 0.5rem;
       font-weight: 400;
       -webkit-appearance: none;
       outline: none;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 4px;
-      font-size: 14px;
+      font-size: 2.4rem;
       z-index: 0;
+      box-sizing: border-box;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 
       &:not(.textarea) {
-        height: 42px;
-        min-height: 42px;
+        // height: 42px;
+        // min-height: 42px;
       }
       &.textarea {
         padding: 8px 12px 0 12px;
@@ -372,11 +374,11 @@
     }
     &.sm {
       .field-input {
-        font-size: 12px;
+        font-size: 1.8rem;
 
         &:not(.textarea) {
-          height: 36px;
-          min-height: 36px;
+          // height: 36px;
+          // min-height: 36px;
         }
       }
       &.has-value {
@@ -393,8 +395,8 @@
         font-size: 2.4rem;
 
         &:not(.textarea) {
-          height: 48px;
-          min-height: 48px;
+          // height: 60px;
+          // min-height: 48px;
         }
       }
       &.has-value {
