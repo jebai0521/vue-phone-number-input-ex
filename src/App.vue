@@ -3,52 +3,10 @@
     id="app"
     :class="{ 'dark': dark }"
   >
-    <h1 style="text-align: center;">
-      VuePhoneNumberInput
-    </h1>
-    <div
-      v-if="!screenshotMode"
-      class="container"
-    >
-      <a
-        class="btn btn-dark margin-right"
-        target="_blank"
-        href="https://github.com/LouisMazel/vue-phone-number-input"
-      >
-        Github
-      </a>
-      <a
-        class="btn btn-danger"
-        target="_blank"
-        href="https://www.npmjs.com/package/vue-phone-number-input"
-      >
-        NPM
-      </a>
-    </div>
     <div
       class="container"
       :style="screenshotMode ? `width: 40%;` : null"
     >
-      <button
-        class="btn margin-right"
-        @click="dark = !dark"
-      >
-        Toggle Dark Mode
-      </button>
-
-      <button
-        class="btn btn-success margin-right"
-        @click="hasLoaderActive = !hasLoaderActive"
-      >
-        Toggle loader
-      </button>
-
-      <button
-        class="btn btn-danger"
-        @click="hasErrorActive = !hasErrorActive"
-      >
-        Toggle error
-      </button>
       <div class="component-container">
         <div class="component">
           <vue-phone-number-input
@@ -315,8 +273,8 @@ hr {
   }
 }
 .component-container {
-  margin: 0 10px 20px 10px;
-  padding: 20px;
+  // margin: 0 10px 20px 10px;
+  // padding: 20px;
   background: #fff;
   border-radius: 4px;
   border: 1px solid #ebebeb;

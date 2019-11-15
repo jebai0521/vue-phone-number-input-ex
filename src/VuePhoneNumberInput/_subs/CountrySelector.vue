@@ -267,7 +267,7 @@
       outline: none;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 4px;
-      font-size: 18px;
+      font-size: 2.4rem;
       z-index: 0;
     }
     &-toggle {
@@ -344,7 +344,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        font-size: 18px;
+        font-size: 1.8rem;
         color:black;
         cursor: pointer;
         &:hover, &.keyboard-selected {
@@ -446,7 +446,7 @@
       .field-input {
         height: 36px;
         min-height: 36px;
-        font-size: 12px;
+        font-size: 2.1rem;
       }
       .field-country-flag {
         top: 16px;
@@ -466,7 +466,7 @@
       .field-input {
         height: 48px;
         min-height: 48px;
-        font-size: 1.8rem;
+        font-size: 2.4rem;
       }
       .field-country-flag {
         top: 25px;

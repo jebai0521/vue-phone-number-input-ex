@@ -62,7 +62,7 @@
   import { countries, countriesIso } from './assets/js/phoneCodeCountries.js'
   import examples from 'libphonenumber-js/examples.mobile.json'
   import { parsePhoneNumberFromString, AsYouType, getExampleNumber } from 'libphonenumber-js'
-  import VueInputUI from '@emanon_/vue-input-ui'
+  import VueInputUI from '../VueInputUi/index'
   import '@emanon_/vue-input-ui/dist/vue-input-ui.css'
   import CountrySelector from './_subs/CountrySelector'
   import locales from './assets/locales'
@@ -270,22 +270,22 @@
     font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     .select-country-container {
-      flex: 0 0 100px;
-      width: 100px;
+      flex: 0 0 30%;
+      width: 30%;
       min-width: 100px;
-      max-width: 100px;
+      max-width: 130px;
     }
     &.sm .select-country-container {
-      flex: 0 0 100px;
-      width: 100px;
+      flex: 0 0 30%;
+      width: 30%;
       min-width: 100px;
-      max-width: 100px;
+      max-width: 130px;
     }
     &.lg .select-country-container {
-      flex: 0 0 100px;
-      width: 100px;
+      flex: 0 0 30%;
+      width: 30%;
       min-width: 100px;
-      max-width: 100px;
+      max-width: 130px;
     }
     .country-selector {
       cursor: pointer;
