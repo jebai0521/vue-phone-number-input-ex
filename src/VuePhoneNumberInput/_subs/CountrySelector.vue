@@ -337,7 +337,7 @@
       top: 100%;
       border-radius: 4px;
       width: 100%;
-      min-width: 270px;
+      min-width: 420px;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
       &-item {
         padding: 0 10px;
@@ -466,7 +466,7 @@
       .field-input {
         height: 48px;
         min-height: 48px;
-        font-size: 18px;
+        font-size: 1.8rem;
       }
       .field-country-flag {
         top: 25px;
