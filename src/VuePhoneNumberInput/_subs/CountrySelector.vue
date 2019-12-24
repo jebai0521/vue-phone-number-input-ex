@@ -27,8 +27,8 @@
       :value="callingCode"
       :placeholder="label"
       :disabled="disabled"
-      :style="[borderStyle]"
       class="field-input"
+      :style="[borderStyle, fontSize]"
       readonly
       @focus="onFocus"
       @click="$emit('click')"
@@ -101,7 +101,8 @@
       keepPreferredOrOnlyCountrySort: { type: Boolean, default: false },
       onlyCountries: { type: Array, default: null },
       ignoredCountries: { type: Array, default: Array },
-      noFlags: { type: Boolean, default: false }
+      noFlags: { type: Boolean, default: false },
+      numberSize: { type: Number, required: false, default: 2.4},
     },
     data () {
       return {
@@ -158,6 +159,9 @@
       },
       callingCode () {
         return this.value ? `+${getCountryCallingCode(this.value)}` : null
+      },
+      fontSize () {
+        return { 'font-size': (this.numberSize) + 'rem' }
       }
     },
     mounted () {

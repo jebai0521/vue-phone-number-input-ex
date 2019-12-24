@@ -19,7 +19,7 @@
       v-model="inputValue"
       v-bind="$attrs"
       :placeholder="labelValue"
-      :style="[borderStyle]"
+      :style="[borderStyle, fontSize]"
       :type="type"
       class="field-input"
       :disabled="disabled"
@@ -36,7 +36,7 @@
       v-model="inputValue"
       v-bind="$attrs"
       :placeholder="labelValue"
-      :style="[borderStyle]"
+      :style="[borderStyle, fontSize]"
       :type="type"
       class="field-input textarea"
       @keydown="keyDown"
@@ -92,7 +92,8 @@
       required: { type: Boolean, default: false },
       textarea: { type: Boolean, default: false },
       loader: { type: Boolean, default: false },
-      clearable: { type: Boolean, default: false }
+      clearable: { type: Boolean, default: false },
+      numberSize: { type: Number, default: 2.4 },
     },
     data: function () {
       return {
@@ -136,6 +137,9 @@
           hint += ' *'
         }
         return hint
+      },
+      fontSize () {
+        return { 'font-size': (this.numberSize) + 'rem' }
       }
     },
     methods: {

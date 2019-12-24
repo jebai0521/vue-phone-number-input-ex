@@ -11,6 +11,7 @@
         :items="codesCountries"
         :color="color"
         :countries-height="countriesHeight"
+        :number-size="numberSize"
         :valid-color="validColor"
         :error="shouldChooseCountry"
         :hint="shouldChooseCountry ? t.countrySelectorError : null"
@@ -44,6 +45,7 @@
         :dark="dark"
         :disabled="disabled"
         :size="size"
+        :number-size="numberSize"
         :error="error"
         :valid="isValid && !noValidatorState"
         :required="required"
@@ -107,7 +109,8 @@
       required: { type: Boolean, default: false },
       countriesHeight: { type: Number, default: 30 },
       noUseBrowserLocale: { type: Boolean, default: false },
-      fetchCountry: { type: Boolean, default: false }
+      fetchCountry: { type: Boolean, default: false },
+      numberSize: { type: Number, default: false }
     },
     data () {
       return {

@@ -24,6 +24,7 @@
             clearable
             :no-flags="noFlags"
             :size="size"
+            :number-size="numberSize"
           />
           <vue-phone-number-input
             v-else
@@ -32,6 +33,7 @@
             :dark="dark"
             :loader="hasLoaderActive"
             :error="hasErrorActive"
+            :number-size="numberSize"
             @update="onUpdate"
           />
         </div>
@@ -85,6 +87,7 @@
             no-use-browser-locale
             :loader="hasLoaderActive"
             :error="hasErrorActive"
+            :number-size="numberSize"
             @update="onUpdate2"
           />
         </div>
@@ -152,7 +155,8 @@
         hasLoaderActive: false,
         hasErrorActive: false,
         noFlags: true,
-        size: 'lg'
+        size: 'lg',
+        numberSize: '2.0'
       }
     },
     computed: {
