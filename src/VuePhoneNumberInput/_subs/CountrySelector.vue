@@ -57,7 +57,7 @@
           ]"
           class="flex align-center country-list-item"
           :style="[value === item.iso2 ? bgStyle : null, itemHeight]"
-          @click.stop="updateValue(item.iso2)"
+          @click.stop="updateValue(item.iso2, item.dialCode)"
         >
           <div
             v-if="!noFlags"
@@ -101,7 +101,7 @@
       keepPreferredOrOnlyCountrySort: { type: Boolean, default: false },
       onlyCountries: { type: Array, default: null },
       ignoredCountries: { type: Array, default: Array },
-      noFlags: { type: Boolean, default: false },
+      noFlags: { type: Boolean, default: true }
       numberSize: { type: Number, required: false, default: 2.4},
     },
     data () {
@@ -181,7 +181,7 @@
         this.$emit('blur')
         this.isFocus = false
       },
-      updateValue (iso2) {
+      updateValue (iso2, dialCode) {
         this.isFocus = false
         this.tmpValue = iso2
         this.$emit('input', iso2)
@@ -264,8 +264,8 @@
       width: 100%;
       // height: 42px;
       // min-height: 42px;
-      padding-right: 18px;
-      padding-left: 10px;
+      // padding-right: 0.5rem;
+      // padding-left: 10px;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
       font-weight: 400;
@@ -273,7 +273,7 @@
       outline: none;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 4px;
-      font-size: 2.4rem;
+      font-size: 2.0rem;
       box-sizing: border-box;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
       z-index: 0;

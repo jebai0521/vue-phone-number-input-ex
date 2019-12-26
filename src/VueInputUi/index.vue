@@ -127,14 +127,14 @@
       labelValue () {
         let label = this.label
         if (this.required && label) {
-          label += ' *'
+          // label += ' *'
         }
         return label
       },
       hintValue () {
         let hint = this.hint
         if (this.required && hint) {
-          hint += ' *'
+          // hint += ' *'
         }
         return hint
       },
@@ -207,7 +207,7 @@
       outline: none;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 4px;
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       z-index: 0;
       box-sizing: border-box;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -396,7 +396,7 @@
     }
     &.lg {
       .field-input {
-        font-size: 2.4rem;
+        font-size: 2.0rem;
 
         &:not(.textarea) {
           // height: 60px;

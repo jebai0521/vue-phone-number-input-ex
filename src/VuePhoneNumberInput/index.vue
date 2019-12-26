@@ -276,21 +276,21 @@
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     .select-country-container {
       flex: 0 0 30%;
-      width: 30%;
+      width: 33%;
       min-width: 90px;
-      max-width: 140px;
+      max-width: 145px;
     }
     &.sm .select-country-container {
       flex: 0 0 30%;
-      width: 30%;
+      width: 33%;
       min-width: 90px;
-      max-width: 140px;
+      max-width: 145px;
     }
     &.lg .select-country-container {
       flex: 0 0 30%;
-      width: 30%;
+      width: 33%;
       min-width: 90px;
-      max-width: 140px;
+      max-width: 145px;
     }
     .country-selector {
       cursor: pointer;
